@@ -11,7 +11,9 @@ mail.google.com##.bkK > .nH:style(border-radius: 0px !important)
 !! Fix font-size for "starred" "everything else" etc
 mail.google.com##.qh:style(font-size: 14px !important)
 !! Fix font and spacing
-mail.google.com##.n3 > .CL > .CK, .TO .nU > .n0, .TO.nZ .nU > .n0, .ah9 > .CJ, .yW, .zA > .a4W, .aiD, .aeU .ma, .l6:style(letter-spacing: 0.2px !important; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
+mail.google.com##.n3 > .CL > .CK, .TO .nU > .n0, .TO.nZ .nU > .n0, .ah9 > .CJ, .yW, .zA > .a4W, .aiD, .aeU .ma, .l6:style(letter-spacing: 0.2px !important)
+mail.google.com##body, input, textarea, select:style(font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
+mail.google.com##:not(.z0 > .L3, .Bn, .ha > .hP, .gH.acX > .L3.bsQ, .gH.acX > .L3.bsQ *, .amn > .ams, .T-I-atl, .T-I-atl *, .Q0, .Q0 *, .OD, .dt, .v .f1, .v .f1 *, .v .fZ, .v .fZ *, .Wr, .Wr *):style(font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
 !! Fix "Compose" button
 mail.google.com##.WR .z0 > .L3 :style(border-radius: 24px !important; height: 48px !important; !important; color: rgb(217, 48, 37) !important; background-color: white !important; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important)
 mail.google.com##.WR .z0 > .L3:is(:active, :hover) :style(box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149) !important; background-color: #fafafb !important)
