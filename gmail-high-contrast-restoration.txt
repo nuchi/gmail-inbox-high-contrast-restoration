@@ -15,9 +15,9 @@ mail.google.com##.n3 > .CL > .CK, .TO .nU > .n0, .TO.nZ .nU > .n0, .ah9 > .CJ, .
 mail.google.com##body, input, textarea, select:style(font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
 mail.google.com##:not(.z0 > .L3, .Bn, .ha > .hP, .gH.acX > .L3.bsQ, .gH.acX > .L3.bsQ *, .amn > .ams, .T-I-atl, .T-I-atl *, .Q0, .Q0 *, .OD, .dt, .v .f1, .v .f1 *, .v .fZ, .v .fZ *, .Wr, .Wr *):style(font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
 !! Fix "Compose" button
-mail.google.com##.WR .z0 > .L3 :style(border-radius: 24px !important; height: 48px !important; !important; color: rgb(217, 48, 37) !important; background-color: white !important; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important)
-mail.google.com##.WR .z0 > .L3:is(:active, :hover) :style(box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149) !important; background-color: #fafafb !important)
-mail.google.com##.WR .z0 > .L3::before:style(filter: invert(17%) sepia(79%) saturate(4564%) hue-rotate(356deg) brightness(96%) contrast(77%);)
+mail.google.com##:is(:not(.aJu, .bym) > .aBO, .WR > .aic) .z0 > .L3:style(border-radius: 24px !important; height: 48px !important; !important; color: rgb(217, 48, 37) !important; background-color: white !important; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important)
+mail.google.com##:is(:not(.aJu, .bym) > .aBO, .WR > .aic) .z0 > .L3:is(:active, :hover) :style(box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149) !important; background-color: #fafafb !important)
+mail.google.com##:is(:not(.aJu, .bym) > .aBO, .WR > .aic) .z0 > .L3::before:style(filter: invert(17%) sepia(79%) saturate(4564%) hue-rotate(356deg) brightness(96%) contrast(77%);)
 !! Fix pop-out reply inverted colors
 mail.google.com##.nH .Hy .m:style(background-color: rgb(64, 64, 64) !important)
 mail.google.com##.Hp:style(color: white !important)
@@ -69,9 +69,9 @@ mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/) ~ :is
 mail.google.com##.wl:matches-css(background-color: /238, 238, 238/):upward(body):style(--focus-box-bg: rgb(255, 255, 255); --hover-box-bg: rgb(253, 253, 253); --active-box-bg: rgb(255, 255, 255); --focus-box-shadow: rgb(170, 170, 170) 0px 0px 0px 1px inset)
 
 !! Apply sidebar theme
-mail.google.com##.nZ.aiq, .ol, .CL:focus, .n6 > span:focus:style(background-color: var(--focus-box-bg) !important; box-shadow: var(--focus-box-shadow, none) !important)
-mail.google.com##.TO.NQ, .CL:hover, .n6 > span:hover:style(background-color: var(--hover-box-bg) !important)
-mail.google.com##.TO.NQ:active, .CL:active, .n6 > span:active:style(background-color: var(--active-box-bg) !important)
+mail.google.com##.nZ.aiq, .ol, .CL:not(.V6):focus, .n6 > span:focus:style(background-color: var(--focus-box-bg) !important; box-shadow: var(--focus-box-shadow, none) !important)
+mail.google.com##.TO.NQ, .CL:not(.V6):hover, .n6 > span:hover:style(background-color: var(--hover-box-bg) !important)
+mail.google.com##.TO.NQ:active, .CL:not(.V6):active, .n6 > span:active:style(background-color: var(--active-box-bg) !important)
 mail.google.com##form.aJf:not(.gb_Ue):style(background-color: var(--search-bar-bg) !important)
 mail.google.com##.bhZ.bym:style(background-color: var(--collapsed-sidebar-bg) !important)
 !!! Special case for active inbox
