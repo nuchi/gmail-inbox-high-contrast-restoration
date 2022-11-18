@@ -42,7 +42,7 @@ mail.google.com##.HM .I5:style(border-radius: 8px !important)
 !! light email list background
 mail.google.com##html:style(--inbox-tab-bg: rgba(255, 255, 255, 0.9); --read-mail-bg: rgba(242, 245, 245, 0.8); --unread-mail-bg: rgba(255, 255, 255, 0.9))
 !! invert dark text if there's a dark background image or color, but light email list
-mail.google.com##[data-tooltip="Starred"] .nU > .n0:matches-css(color: rgb(255, 255, 255)):upward(body):style(--dark-text-invert-filter: invert(1) brightness(1.5) drop-shadow(0 0 4px rgba(0,0,0,0.4)))
+mail.google.com##.aim:nth-child(2) .nU > .n0:matches-css(color: rgb(255, 255, 255)):upward(body):style(--dark-text-invert-filter: invert(1) brightness(1.5) drop-shadow(0 0 4px rgba(0,0,0,0.4)))
 !! dark email list background (overrides previous invert-text filter with a more specific css variable)
 mail.google.com##.bzn .G-tF .T-Jo:matches-css(background-image:/check_box_\w*white/):upward(.bkL):style(--inbox-tab-bg: rgba(51, 51, 51, 0.9); --dark-text-invert-filter: none; --read-mail-bg: rgba(0, 0, 0, 0.8); --unread-mail-bg: rgba(51, 51, 51, 0.9))
 
@@ -52,7 +52,6 @@ mail.google.com##.bkK > .nH table[id^=":"]:style(background-color: transparent !
 mail.google.com##.bkK > .nH :is(.aKh, .qd):style(background-color: var(--inbox-tab-bg) !important)
 mail.google.com##.yO:not(.x7):style(background-color: var(--read-mail-bg) !important)
 mail.google.com##.zE:not(.x7):style(background-color: var(--unread-mail-bg) !important)
-!mail.google.com##:is(.G-atb > div:not([aria-label="search refinement"]), .Wg):style(filter: var(--dark-text-invert-filter))
 mail.google.com##:is(.G-Ni, .Wg, .aeG):style(filter: var(--dark-text-invert-filter))
 
 ! Sidebar
@@ -60,7 +59,7 @@ mail.google.com##:is(.G-Ni, .Wg, .aeG):style(filter: var(--dark-text-invert-filt
 !!! Light theme: default
 mail.google.com##html:style(--focus-box-bg: rgb(232, 234, 237); --hover-box-bg: rgb(241, 243, 244); --active-box-bg: rgb(232, 234, 237); --focus-inbox-text: rgb(32, 33, 36); --search-bar-bg: rgb(241, 243, 244); --collapsed-sidebar-bg: white)
 !!! Dark theme
-mail.google.com##[data-tooltip="Starred"] .nU > .n0:matches-css(color: rgb(255, 255, 255)):upward(body):style(--focus-box-bg: rgba(255, 255, 255, 0.3); --hover-box-bg: rgba(255,255,255,0.2); --active-box-bg: rgba(255, 255, 255, 0.3); --focus-inbox-text: rgb(255, 255, 255); --search-bar-bg: rgba(241,243,244,.24); --collapsed-sidebar-bg: rgb(97, 97, 97))
+mail.google.com##.aim:nth-child(2) .nU > .n0:matches-css(color: rgb(255, 255, 255)):upward(body):style(--focus-box-bg: rgba(255, 255, 255, 0.3); --hover-box-bg: rgba(255,255,255,0.2); --active-box-bg: rgba(255, 255, 255, 0.3); --focus-inbox-text: rgb(255, 255, 255); --search-bar-bg: rgba(241,243,244,.24); --collapsed-sidebar-bg: rgb(97, 97, 97))
 !!! Default theme
 mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/) + .wq:matches-css(background-image: none) + .wp:matches-css(background-image: none):upward(body):style(--focus-inbox-bg: rgb(252, 232, 230); --focus-inbox-text: rgb(217, 48, 37); --focus-inbox-filter: invert(17%) sepia(79%) saturate(4564%) hue-rotate(356deg) brightness(96%) contrast(77%))
 !!! unset inbox changes for white-bg themes?
