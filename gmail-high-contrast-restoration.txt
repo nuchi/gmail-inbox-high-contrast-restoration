@@ -22,6 +22,8 @@ mail.google.com##:is(:not(.aJu, .bym) > .aBO, .WR > .aic) .z0 > .L3::before:styl
 mail.google.com##.nH .Hy .m:style(background-color: rgb(64, 64, 64) !important)
 mail.google.com##.Hp:style(color: white !important)
 mail.google.com##.Hm:style(filter: invert(1))
+!! Chrome only: fix nonzero-width scrollbar looking ugly with primary/promotions/etc tabs
+mail.google.com##.tf::-webkit-scrollbar:style(width: 0px !important; height: 0px !important)
 !! Fix too-rounded corners
 !!! Fix reply/forward buttons
 mail.google.com##.amr .amn > .ams:style(border: none !important)
