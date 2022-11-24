@@ -42,9 +42,9 @@ mail.google.com##.HM .I5:style(border-radius: 8px !important)
 
 ! Email list
 !! light email list background
-mail.google.com##html:style(--inbox-tab-bg: rgba(255, 255, 255, 0.9); --read-mail-bg: rgba(242, 245, 245, 0.8); --unread-mail-bg: rgba(255, 255, 255, 0.9))
+mail.google.com##html:style(--inbox-tab-bg: rgba(255, 255, 255, 0.9); --read-mail-bg: rgba(242, 245, 245, 0.8); --unread-mail-bg: rgba(255, 255, 255, 0.9); --separator-box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122))
 !! invert dark text if there's a dark background image or color, but light email list
-mail.google.com##.ah9 > .CJ:matches-css(color: rgb(255, 255, 255)):upward(body):style(--dark-text-invert-filter: invert(1) brightness(1.5) drop-shadow(0 0 4px rgba(0,0,0,0.4)))
+mail.google.com##.ah9 > .CJ:matches-css(color: rgb(255, 255, 255)):upward(body):style(--dark-text-invert-filter: invert(1) brightness(1.5) drop-shadow(0 0 4px rgba(0,0,0,0.4)); --separator-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12))
 !! dark email list background (overrides previous invert-text filter with a more specific css variable)
 mail.google.com##.bzn .G-tF .T-Jo:matches-css(background-image:/check_box_\w*white/):upward(.bkL):style(--inbox-tab-bg: rgba(51, 51, 51, 0.9); --dark-text-invert-filter: none; --read-mail-bg: rgba(0, 0, 0, 0.8); --unread-mail-bg: rgba(51, 51, 51, 0.9))
 
@@ -55,6 +55,9 @@ mail.google.com##.bkK > .nH :is(.aKh, .qd):style(background-color: var(--inbox-t
 mail.google.com##.yO:not(.x7):style(background-color: var(--read-mail-bg) !important)
 mail.google.com##.zE:not(.x7):style(background-color: var(--unread-mail-bg) !important)
 mail.google.com##:is(.G-Ni, .Wg, .l2, .aBS, .ar5):style(filter: var(--dark-text-invert-filter))
+
+!! Horizontal separators
+mail.google.com##.aiw, .G-atb::before, .Wg:style(box-shadow: var(--separator-box-shadow) !important)
 
 ! Sidebar
 !! Detect and set values for themes. Use css vars for focus, hover, active, because uBO can't reliably use procedural filters for those
@@ -79,6 +82,11 @@ mail.google.com##.bhZ.bym:style(background-color: var(--collapsed-sidebar-bg) !i
 mail.google.com##.nZ.aBP:style(background-color: var(--focus-inbox-bg, var(--focus-box-bg)) !important)
 mail.google.com##.nZ.aBP *:style(color: var(--focus-inbox-text) !important)
 mail.google.com##.nZ.aBP .qj:style(filter: var(--focus-inbox-filter))
+
+! Right sidebar border
+mail.google.com##.bAw .brC-aMv-auO.brC-aT5-aOt-Jw:style(border-left: 1px solid rgba(255, 255, 255, 0.12) !important)
+mail.google.com##.bAw .brC-aT5-aOt-Jw:style(border-left: 1px solid #f1f3f4 !important)
+mail.google.com##.bAw .brC-aMv-bta.brC-aT5-aOt-Jw:style(border-left: 1px solid rgba(100,121,143,.12) !important)
 
 ! Ad-hoc fixes
 !! ad-hoc for default and other white themes
