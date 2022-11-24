@@ -54,7 +54,7 @@ mail.google.com##.bkK > .nH table[id^=":"]:style(background-color: transparent !
 mail.google.com##.bkK > .nH :is(.aKh, .qd):style(background-color: var(--inbox-tab-bg) !important)
 mail.google.com##.yO:not(.x7):style(background-color: var(--read-mail-bg) !important)
 mail.google.com##.zE:not(.x7):style(background-color: var(--unread-mail-bg) !important)
-mail.google.com##:is(.G-Ni, .Wg, .aeG):style(filter: var(--dark-text-invert-filter))
+mail.google.com##:is(.G-Ni, .Wg, .l2, .aBS, .ar5):style(filter: var(--dark-text-invert-filter))
 
 ! Sidebar
 !! Detect and set values for themes. Use css vars for focus, hover, active, because uBO can't reliably use procedural filters for those
