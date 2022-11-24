@@ -1,5 +1,5 @@
 ! Title: Gmail Inbox High-Contrast Restoration
-! Version: 0.3
+! Version: 0.3.1
 ! Expires: 7 days
 ! Description: This is a purely cosmetic list that restores the old gmail inbox styles, from before the 2022 change. It restores colors and sizes to their former high-contrast selves, and gets rid of the new low-contrast hard-to-read colors. Assorted other changes include restoring the Compose button color, restoring the default and high-contrast themes to their original colors, and restoring curved button radiuses to be approximately as round as they used to be. NOTE: a page refresh is sometimes required when switching themes; if the colors look weird, please refresh the page.
 ! Copyright: 2022 Haggai Nuchi
@@ -8,8 +8,8 @@
 ! Apply to all themes
 !! Fix rounded corners: email list
 mail.google.com##.bkK > .nH:style(border-radius: 0px !important)
-!! Fix colors, margin, border-radius for quick settings
-mail.google.com##.IU:style(border-radius: 0px !important; background-color: rgba(255, 255, 255, 0.9) !important; margin-left: 0px !important)
+!! Fix colors, margin, border-radius for quick settings. Move 16px left margin into 8px padding left and right to avoid fat right sidebar
+mail.google.com##.IU:style(border-radius: 0px !important; background-color: rgba(255, 255, 255, 0.9) !important; margin-left: 0px !important; padding-left: 8px !important; padding-right: 8px !important)
 !! Fix font-size for "starred" "everything else" etc
 mail.google.com##.qh:style(font-size: 14px !important)
 !! Fix font and spacing
