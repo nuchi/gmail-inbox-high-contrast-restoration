@@ -1,5 +1,5 @@
 ! Title: Gmail Inbox High-Contrast Restoration
-! Version: 0.3.1
+! Version: 0.3.2
 ! Expires: 7 days
 ! Description: This is a purely cosmetic list that restores the old gmail inbox styles, from before the 2022 change. It restores colors and sizes to their former high-contrast selves, and gets rid of the new low-contrast hard-to-read colors. Assorted other changes include restoring the Compose button color, restoring the default and high-contrast themes to their original colors, and restoring curved button radiuses to be approximately as round as they used to be. NOTE: a page refresh is sometimes required when switching themes; if the colors look weird, please refresh the page.
 ! Copyright: 2022 Haggai Nuchi
@@ -58,7 +58,7 @@ mail.google.com##.bzn .G-tF .T-Jo:matches-css(background-image:/check_box_\w*whi
 mail.google.com##.bkK > .nH:style(background-color: transparent !important)
 mail.google.com##.bkK > .nH table[id^=":"]:style(background-color: transparent !important)
 mail.google.com##.bkK > .nH :is(.aKh, .qd):style(background-color: var(--inbox-tab-bg) !important)
-mail.google.com##.yO:not(.x7):style(background-color: var(--read-mail-bg) !important)
+mail.google.com##.yO:not(.x7, .aps):style(background-color: var(--read-mail-bg) !important)
 mail.google.com##.zE:not(.x7):style(background-color: var(--unread-mail-bg) !important)
 mail.google.com##:is(.G-Ni, .Wg, .l2, .aBS, .ar5):style(filter: var(--dark-text-invert-filter))
 
@@ -99,6 +99,6 @@ mail.google.com##.bAw .brC-aMv-bta.brC-aT5-aOt-Jw:style(border-left: 1px solid r
 mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):style(filter: opacity(0))
 mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):upward(body):style(background-color: transparent !important)
 mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):upward(body) .bAw > [role] :style(background-color: transparent !important)
-mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):upward(2) tr.yO:not(.x7) :style(background-color: rgba(242, 245, 245, 0.8) !important)
+mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):upward(2) tr.yO:not(.x7, .aps) :style(background-color: rgba(242, 245, 245, 0.8) !important)
 !! ad-hoc fixes for high contrast
-mail.google.com##.wl:matches-css(background-color: /238, 238, 238/):upward(2) tr.yO:not(.x7) :style(background-color: rgb(242, 243, 244) !important)
+mail.google.com##.wl:matches-css(background-color: /238, 238, 238/):upward(2) tr.yO:not(.x7, .aps) :style(background-color: rgb(242, 243, 244) !important)
