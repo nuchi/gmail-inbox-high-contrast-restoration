@@ -40,6 +40,12 @@ mail.google.com##.T-I-atl:hover:style(background-color: rgb(41, 123, 230) !impor
 mail.google.com##.hG.T-I:style(border-bottom-right-radius: 4px !important; border-top-right-radius: 4px !important)
 mail.google.com##.hG.T-I-atl:style(border-left-color: rgb(24, 90, 188) !important)
 mail.google.com##.dC:style(border-radius: 4px !important)
+!!! Fix send+archive button
+mail.google.com##.gU .btA .Uo:style(border-radius: 4px !important)
+!!! When send+archive active, fix send borders
+mail.google.com##.gU .btA .v7.T-I:style(border-top-left-radius: 4px !important; border-bottom-left-radius: 4px !important)
+mail.google.com##.btA .btz.T-I-ax7, .hG.v6.T-I-ax7:style(border-color: rgb(95, 99, 104) !important)
+mail.google.com##.Up .BW + .dC, .dC .hG.v6.T-I-ax7:style(box-shadow: rgb(218, 220, 224) 0px 0px 0px 1px inset !important)
 !!! Fix reply subwindow
 mail.google.com##.HM .I5:style(border-radius: 8px !important)
 !!! Fix quick settings "see all settings" button
