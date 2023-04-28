@@ -1,5 +1,5 @@
 ! Title: Gmail Inbox High-Contrast Restoration
-! Version: 0.3.3
+! Version: 0.3.4
 ! Expires: 7 days
 ! Description: This is a purely cosmetic list that restores the old gmail inbox styles, from before the 2022 change. It restores colors and sizes to their former high-contrast selves, and gets rid of the new low-contrast hard-to-read colors. Assorted other changes include restoring the Compose button color, restoring the default and high-contrast themes to their original colors, and restoring curved button radiuses to be approximately as round as they used to be. NOTE: a page refresh is sometimes required when switching themes; if the colors look weird, please refresh the page.
 ! Copyright: 2022 Haggai Nuchi
@@ -15,7 +15,7 @@ mail.google.com##.qh:style(font-size: 14px !important)
 !! Fix font and spacing
 mail.google.com##.n3 > .CL > .CK, .TO .nU > .n0, .TO.nZ .nU > .n0, .ah9 > .CJ, .yW, .zA > .a4W, .aiD, .aeU .ma, .l6:style(letter-spacing: 0.2px !important)
 mail.google.com##body, input, textarea, select:style(font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
-mail.google.com##:not(.z0 > .L3, .Bn, .ha > .hP, .gH.acX > .L3.bsQ, .gH.acX > .L3.bsQ *, .amn > .ams, .T-I-atl, .T-I-atl *, .Q0, .Q0 *, .OD, .dt, .v .f1, .v .f1 *, .v .fZ, .v .fZ *, .Wr, .Wr *, .J-N, .J-N *, span[style*="font-family:"]):style(font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
+mail.google.com##:not(.z0 > .L3, .Bn, .ha > .hP, .gH.acX > .L3.bsQ, .gH.acX > .L3.bsQ *, .amn > .ams, .T-I-atl, .T-I-atl *, .Q0, .Q0 *, .OD, .dt, .v .f1, .v .f1 *, .v .fZ, .v .fZ *, .Wr, .Wr *, .J-N, .J-N *, span[style*="font-family:"], font[face]):style(font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important)
 !! Fix "Compose" button
 mail.google.com##:is(:not(.aJu, .bym) > .aBO, .WR > .aic) .z0 > .L3:style(border-radius: 24px !important; height: 48px !important; !important; color: rgb(217, 48, 37) !important; background-color: white !important; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important)
 mail.google.com##:is(:not(.aJu, .bym) > .aBO, .WR > .aic) .z0 > .L3:is(:active, :hover) :style(box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149) !important; background-color: #fafafb !important)
