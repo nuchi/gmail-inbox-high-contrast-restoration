@@ -1,5 +1,5 @@
 ! Title: Gmail Inbox High-Contrast Restoration
-! Version: 0.4.0
+! Version: 0.4.1
 ! Expires: 7 days
 ! Description: This is a purely cosmetic list that restores the old gmail inbox styles, from before the 2022 change. It restores colors and sizes to their former high-contrast selves, and gets rid of the new low-contrast hard-to-read colors. Assorted other changes include restoring the Compose button color, restoring the default and high-contrast themes to their original colors, and restoring curved button radiuses to be approximately as round as they used to be. NOTE: a page refresh is sometimes required when switching themes; if the colors look weird, please refresh the page.
 ! Copyright: 2022 Haggai Nuchi
@@ -88,7 +88,7 @@ mail.google.com##.wl:matches-css(background-color: /238, 238, 238/):upward(body)
 mail.google.com##.nZ.aiq, .ol, .CL:not(.V6):focus, .n6 > span:focus:style(background-color: var(--focus-box-bg) !important; box-shadow: var(--focus-box-shadow, none) !important)
 mail.google.com##.TO.NQ, .CL:not(.V6):hover, .n6 > span:hover:style(background-color: var(--hover-box-bg) !important)
 mail.google.com##.TO.NQ:active, .CL:not(.V6):active, .n6 > span:active:style(background-color: var(--active-box-bg) !important)
-mail.google.com##form.aJf:not(.gb_ue):style(background-color: var(--search-bar-bg) !important)
+mail.google.com##form.aJf:not(.gb_ue,.gb_Ue,.gb_ze):style(background-color: var(--search-bar-bg) !important)
 mail.google.com##.bhZ.bym:style(background-color: var(--collapsed-sidebar-bg) !important)
 !!! Special case for active inbox
 mail.google.com##.nZ.aBP:style(background-color: var(--focus-inbox-bg, var(--focus-box-bg)) !important)
