@@ -1,5 +1,5 @@
 ! Title: Gmail Inbox High-Contrast Restoration
-! Version: 0.4.2
+! Version: 0.4.3
 ! Expires: 7 days
 ! Description: This is a purely cosmetic list that restores the old gmail inbox styles, from before the 2022 change. It restores colors and sizes to their former high-contrast selves, and gets rid of the new low-contrast hard-to-read colors. Assorted other changes include restoring the Compose button color, restoring the default and high-contrast themes to their original colors, and restoring curved button radiuses to be approximately as round as they used to be. NOTE: a page refresh is sometimes required when switching themes; if the colors look weird, please refresh the page.
 ! Copyright: 2022 Haggai Nuchi
@@ -78,9 +78,9 @@ mail.google.com##html:style(--focus-box-bg: rgb(232, 234, 237); --hover-box-bg: 
 !!! Dark theme
 mail.google.com##.ah9 > .CJ:matches-css(color: rgb(255, 255, 255)):upward(body):style(--focus-box-bg: rgba(255, 255, 255, 0.3); --hover-box-bg: rgba(255,255,255,0.2); --active-box-bg: rgba(255, 255, 255, 0.3); --focus-inbox-text: rgb(255, 255, 255); --search-bar-bg: rgba(241,243,244,.24); --collapsed-sidebar-bg: rgb(97, 97, 97))
 !!! Default theme
-mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/) + .wq:matches-css(background-image: none) + .wp:matches-css(background-image: none):upward(body):style(--focus-inbox-bg: rgb(252, 232, 230); --focus-inbox-text: rgb(217, 48, 37); --focus-inbox-filter: invert(17%) sepia(79%) saturate(4564%) hue-rotate(356deg) brightness(96%) contrast(77%))
+mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/) + .wq:matches-css(background-image: none) + .wp:matches-css(background-image: none):upward(body):style(--focus-inbox-bg: rgb(252, 232, 230); --focus-inbox-text: rgb(217, 48, 37); --focus-inbox-filter: invert(17%) sepia(79%) saturate(4564%) hue-rotate(356deg) brightness(96%) contrast(77%))
 !!! unset inbox changes for white-bg themes?
-mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/) ~ :is(.wp, .wq):matches-css(background-image: /url/):upward(body):style(--focus-inbox-bg: rgb(232, 234, 237); --focus-inbox-text: rgb(32, 33, 36); --focus-inbox-filter: none)
+mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/) ~ :is(.wp, .wq):matches-css(background-image: /url/):upward(body):style(--focus-inbox-bg: rgb(232, 234, 237); --focus-inbox-text: rgb(32, 33, 36); --focus-inbox-filter: none)
 !!! High contrast theme
 mail.google.com##.wl:matches-css(background-color: /238, 238, 238/):upward(body):style(--focus-box-bg: rgb(255, 255, 255); --hover-box-bg: rgb(253, 253, 253); --active-box-bg: rgb(255, 255, 255); --focus-box-shadow: rgb(170, 170, 170) 0px 0px 0px 1px inset)
 
@@ -102,9 +102,9 @@ mail.google.com##.bAw .brC-aMv-bta.brC-aT5-aOt-Jw:style(border-left: 1px solid r
 
 ! Ad-hoc fixes
 !! ad-hoc for default and other white themes
-mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):style(filter: opacity(0))
-mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):upward(body):style(background-color: transparent !important)
-mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):upward(body) .bAw > [role] :style(background-color: transparent !important)
-mail.google.com##.wl:matches-css(background-color: /rgba?\(246, 248, 252/):upward(2) tr.yO:not(.x7, .aps) :style(background-color: rgba(242, 245, 245, 0.8) !important)
+mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/):style(filter: opacity(0))
+mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/):upward(body):style(background-color: transparent !important)
+mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/):upward(body) .bAw > [role] :style(background-color: transparent !important)
+mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/):upward(2) tr.yO:not(.x7, .aps) :style(background-color: rgba(242, 245, 245, 0.8) !important)
 !! ad-hoc fixes for high contrast
 mail.google.com##.wl:matches-css(background-color: /238, 238, 238/):upward(2) tr.yO:not(.x7, .aps) :style(background-color: rgb(242, 243, 244) !important)
