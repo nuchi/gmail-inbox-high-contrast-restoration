@@ -1,5 +1,5 @@
 ! Title: Gmail Inbox High-Contrast Restoration
-! Version: 0.4.3
+! Version: 0.5.0
 ! Expires: 7 days
 ! Description: This is a purely cosmetic list that restores the old gmail inbox styles, from before the 2022 change. It restores colors and sizes to their former high-contrast selves, and gets rid of the new low-contrast hard-to-read colors. Assorted other changes include restoring the Compose button color, restoring the default and high-contrast themes to their original colors, and restoring curved button radiuses to be approximately as round as they used to be. NOTE: a page refresh is sometimes required when switching themes; if the colors look weird, please refresh the page.
 ! Copyright: 2022 Haggai Nuchi
@@ -122,8 +122,9 @@ mail.google.com##.pG:not([aria-checked="true"]) :is(.vOtjfb, .pH)::before:style(
 mail.google.com##.pG:not([aria-checked="true"]) :is(.vOtjfb, .pH)::after:style(background: #ffffff !important; color: #777777 !important; clip-path: polygon(1.9px 1px, 8.5px 1px, 12.7px 6px, 8.5px 11px, 1.9px 11px, 5.2px 6px) !important)
 mail.google.com##.pG:not([aria-checked="true"]):hover :is(.vOtjfb, .pH)::before:style(background: #5f6368 !important)
 !! Personal level indicators
-mail.google.com##.pG .vOtjfb.aZ5::after:style(content: "»" !important)
-mail.google.com##.pG .vOtjfb.bnp::after:style(content: "›" !important)
+mail.google.com##.vOtjfb:style(background: none !important)
+mail.google.com##.vOtjfb.aZ5::after:style(content: "»" !important; display: block; text-align: center;)
+mail.google.com##.vOtjfb.bnp::after:style(content: "›" !important; display: block; text-align: center;)
 !! Keep the no-arrow tag visible (Gmail otherwise only shows it on hover)
 mail.google.com##.pG .pH:style(display: block !important; visibility: visible !important; opacity: 1 !important; min-width: 20px !important; min-height: 20px !important; transform: none !important; filter: none !important; clip-path: none !important; overflow: visible !important)
 mail.google.com##.pG .pH::before, .pG .pH::after:style(visibility: visible !important; opacity: 1 !important)
