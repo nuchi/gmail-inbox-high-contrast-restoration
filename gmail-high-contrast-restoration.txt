@@ -1,5 +1,5 @@
 ! Title: Gmail Inbox High-Contrast Restoration
-! Version: 0.4.3
+! Version: 0.5.0
 ! Expires: 7 days
 ! Description: This is a purely cosmetic list that restores the old gmail inbox styles, from before the 2022 change. It restores colors and sizes to their former high-contrast selves, and gets rid of the new low-contrast hard-to-read colors. Assorted other changes include restoring the Compose button color, restoring the default and high-contrast themes to their original colors, and restoring curved button radiuses to be approximately as round as they used to be. NOTE: a page refresh is sometimes required when switching themes; if the colors look weird, please refresh the page.
 ! Copyright: 2022 Haggai Nuchi
@@ -108,3 +108,25 @@ mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/):upwar
 mail.google.com##.wl:matches-css(background-color: /rgba?\(248, 250, 253/):upward(2) tr.yO:not(.x7, .aps) :style(background-color: rgba(242, 245, 245, 0.8) !important)
 !! ad-hoc fixes for high contrast
 mail.google.com##.wl:matches-css(background-color: /238, 238, 238/):upward(2) tr.yO:not(.x7, .aps) :style(background-color: rgb(242, 243, 244) !important)
+
+! Restore yellow/white "important" tag markers with personal level indicators
+!! Strip the new icon (both the arrow and no-arrow versions)
+mail.google.com##.pG :is(.vOtjfb, .pH):style(background: none !important; -webkit-mask: none !important; mask: none !important; color: transparent !important; position: relative !important; opacity: 1 !important)
+!! Shared tag shape (::before = outer tag, ::after = inner fill + arrow)
+mail.google.com##.pG :is(.vOtjfb, .pH)::before, .pG :is(.vOtjfb, .pH)::after:style(content: "" !important; display: block !important; position: absolute !important; left: 50% !important; top: 50% !important; width: 14px !important; height: 12px !important; margin: -6px 0 0 -7px !important; transform: none !important; -webkit-mask: none !important; mask: none !important; background: none !important; font-family: Arial, sans-serif !important; font-size: 11px !important; font-weight: bold !important; line-height: 9px !important; letter-spacing: 0 !important; text-align: center !important; text-indent: 1px !important; clip-path: polygon(0 0, 9px 0, 14px 6px, 9px 12px, 0 12px, 4px 6px) !important)
+!! Important: solid yellow tag, dark arrow
+mail.google.com##.pG[aria-checked="true"] :is(.vOtjfb, .pH)::before:style(background: #f4b400 !important)
+mail.google.com##.pG[aria-checked="true"] :is(.vOtjfb, .pH)::after:style(color: #202124 !important)
+!! Not important: white tag with grey outline, grey arrow
+mail.google.com##.pG:not([aria-checked="true"]) :is(.vOtjfb, .pH)::before:style(background: #b0b0b0 !important)
+mail.google.com##.pG:not([aria-checked="true"]) :is(.vOtjfb, .pH)::after:style(background: #ffffff !important; color: #777777 !important; clip-path: polygon(1.9px 1px, 8.5px 1px, 12.7px 6px, 8.5px 11px, 1.9px 11px, 5.2px 6px) !important)
+mail.google.com##.pG:not([aria-checked="true"]):hover :is(.vOtjfb, .pH)::before:style(background: #5f6368 !important)
+!! Personal level indicators
+mail.google.com##.vOtjfb:style(background: none !important)
+mail.google.com##.vOtjfb.aZ5::after:style(content: "»" !important; display: block; text-align: center;)
+mail.google.com##.vOtjfb.bnp::after:style(content: "›" !important; display: block; text-align: center;)
+!! Keep the no-arrow tag visible (Gmail otherwise only shows it on hover)
+mail.google.com##.pG .pH:style(display: block !important; visibility: visible !important; opacity: 1 !important; min-width: 20px !important; min-height: 20px !important; transform: none !important; filter: none !important; clip-path: none !important; overflow: visible !important)
+mail.google.com##.pG .pH::before, .pG .pH::after:style(visibility: visible !important; opacity: 1 !important)
+!! Remove Gmail's rounded corners from the no-arrow tag so it keeps a sharp tag shape
+mail.google.com##.pG .pH, .pG .pH::before, .pG .pH::after:style(border-radius: 0 !important; border: none !important; box-shadow: none !important; outline: none !important)
